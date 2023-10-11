@@ -1,0 +1,25 @@
+.header__avatar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 0 1 300px;
+
+
+  .header__logo {
+    cursor: pointer;
+  }
+
+  .toolbar__searchbar {
+    background: none;
+    box-shadow: none;
+    border-bottom: 1px solid #49454F;
+    width: 225px;
+  }
+}
+
+.header__avatar-mobile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 0 1 auto;
+}

@@ -1,0 +1,23 @@
+@import "styles/vars";
+@import "styles/normalize";
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: rgba(111, 121, 133, 0.28);
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+  flex: 1 0 auto;
+}
+
+
+
+
+

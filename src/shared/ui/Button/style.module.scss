@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #C9C5CA;
+    cursor: pointer;
+
+}
+
+.clear{
+    background: none;
+    border: none;
+    border-radius: 0;
+}

@@ -1,0 +1,50 @@
+.task-info__header {
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgba(148, 147, 163, 0.25);
+  height: 50px;
+  padding: 0 20px;
+  flex: 0 0 9%;
+  .header-toolbar {
+
+    display: flex;
+    gap: 10px;
+
+    .header-count {
+      color: #aaaaaa8a;
+    }
+
+    .header-status {
+      font-weight: bold;
+    }
+  }
+
+  .header-btns {
+    display: flex;
+    gap: 10px;
+
+    .btn-action {
+      background: #e8eefa;
+      border-radius: 50px;
+      padding: 5px 5px;
+    }
+
+    .btn-loader {
+      width: 30px;
+      opacity: 0;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    .btn-checked {
+      fill: rgba(245, 255, 0, 0.59) !important;
+    }
+
+    .btn-icon {
+      fill: #415997;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.subtasks-item {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  background: rgba(241, 242, 247, 0.68);
+  border-bottom: 1px solid rgba(148, 147, 163, 0.25);
+
+  .subtasks-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #9493a3;
+    padding: 5px 0.5px;
+    transition: 0.4s;
+    width: 30px;
+    height: 30px;
+
+    .icon {
+      fill: #9493a3;
+    }
+
+    &:hover {
+      border: 1px solid #5c5cff;
+    }
+  }
+
+  .sbt-btn {
+    opacity: 0;
+  }
+
+  .subtasks-body {
+    flex: 1 0 75%;
+    padding: 0 10px;
+
+    &__title {
+      margin: 0 0 5px 0;
+      font-size: 0.9em;
+      font-weight: bold;
+      line-height: 16px;
+    }
+
+    &__date {
+      font-size: 0.7em;
+      color: #9493a3;
+    }
+  }
+
+  .line {
+    text-decoration: line-through;
+  }
+
+  .subtasks-icon {
+    flex: 0 0 10%;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.sbt-not {
+
+  .icon {
+    fill: #ffffff;
+  }
+
+  &:hover {
+    position: relative;
+    transition: 0.3s;
+    background: white;
+    box-shadow: 4px 4px 8px 0px rgba(92, 92, 255, 0.2);
+    animation: hoverItem 0.2s linear forwards;
+  }
+}
+
+@keyframes hoverItem {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 105%;
+  }
+}

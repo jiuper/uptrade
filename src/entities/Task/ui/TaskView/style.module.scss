@@ -1,0 +1,60 @@
+.tasks {
+    display: flex;
+
+    .tasks-btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 0 1 300px;
+    }
+}
+
+//isMobile
+
+.tasks-mob {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem 50px 1rem;
+    &__notice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 1rem;
+        &_button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: 700;
+            background-color: #fff;
+        }
+        &_icon {
+            background-color: rgb(92, 92, 255);
+            border-radius: 50%;
+            padding: 5px;
+            fill: #fff;
+        }
+        &_status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            font-size: 17px;
+            color: rgba(111, 121, 133, 0.34);
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        // max-height: 60%;
+        height: 35vh;
+        overflow: scroll;
+    }
+}

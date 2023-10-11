@@ -1,0 +1,47 @@
+.file {
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .file-icon {
+
+    background: #e8edff;
+    padding: 5px;
+    border-radius: 4px;
+
+  }
+  .file-icon-mobile{
+    flex: 0 0 5%;
+  }
+
+  .file-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .file-name {
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 1.22px;
+      word-break: break-all;
+    }
+
+    .file-date {
+      font-size: 8px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .file-desc-mobile{
+    flex: 1 0 70%;
+  }
+}
+
+.file-mobile {
+  background: #fff;
+  height: 70px;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 0 20px;
+}

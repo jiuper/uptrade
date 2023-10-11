@@ -1,0 +1,60 @@
+.form-remove {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .form-remove__title {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.44px;
+    line-height: 20px;
+  }
+
+  .form-remove__item {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #6f7985;
+    border-radius: 5px;
+    padding: 6px 15px;
+    cursor: pointer;
+    position: relative;
+
+    .btn-remove {
+      position: absolute;
+      color: #dce1e6;
+      background: rgba(255, 0, 69, 1);
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      opacity: 0;
+      top: 0;
+      width: 50px;
+      padding: 5px 10px;
+      transition: all .5s ease-in-out;
+      transform: translateX(-180%);
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon{
+        width: 20px;
+        height: 20px;
+        fill: #dce1e6;
+      }
+    }
+
+  }
+
+
+  .form-remove__item:hover {
+    transition: 0.4s;
+
+    > .btn-remove {
+      opacity: 1;
+      right: 0;
+      position: absolute;
+      z-index: 2;
+      transform: translateX(0%);
+    }
+  }
+}

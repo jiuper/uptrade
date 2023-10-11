@@ -1,0 +1,10 @@
+.comment-field {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .comment-input {
+    width: 100%;
+  }
+}

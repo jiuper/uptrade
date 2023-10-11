@@ -1,0 +1,37 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .form-body{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .tasks{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-footer{
+    display: flex;
+    justify-content: center;
+
+    .form-btn{
+      border-radius: 25px;
+      background: #5C5CFF;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 1.22;
+      padding: 12px 35px;
+    }
+
+    .btn-disable{
+      background: #6f7985;
+    }
+  }
+
+
+}

@@ -1,0 +1,21 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .field-title {
+    color: #6f7985;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .field-input {
+
+  }
+
+  .field-disabled:hover{
+    border-color: #6f7985;
+  }
+}

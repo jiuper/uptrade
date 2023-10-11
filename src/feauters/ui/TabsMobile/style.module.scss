@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 15px;
+
+  .tab {
+    height: 90px;
+    background: aqua;
+    max-width: 166px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: bold;
+  }
+
+  .btn-queue{
+    background: #a98b97;
+  }
+  .btn-development{
+    background: #eaab7f;
+  }
+  .btn-done{
+    background: #97bb7d;
+  }
+  .btn-all{
+    background: #f66;
+  }
+}

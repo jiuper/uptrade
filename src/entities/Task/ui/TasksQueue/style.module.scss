@@ -1,0 +1,31 @@
+.tasks-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .task-status{
+    border-radius: 15px;
+    width: 200px;
+    background: #a98b97;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    letter-spacing: 1.44px;
+    line-height: 20px;
+
+
+  }
+
+  .task-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+

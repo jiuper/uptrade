@@ -1,0 +1,229 @@
+.task-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 0 80%;
+
+  .task-info__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .task-info__footer {
+      flex: 0 0 5%;
+      border-top: 1px solid rgba(148, 147, 163, 0.25);
+    }
+  }
+}
+
+//isMobile
+.task-info__mobile {
+  background: rgba(111, 121, 133, 0.28);
+  height: 100%;
+
+  .task-mobile__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+    .task-mobile__header {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 20px;
+      background: #fff;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+
+      .task-mobile__caption {
+        display: flex;
+        justify-content: space-between;
+        color: #0a1026;
+
+        .caption-item {
+          .caption__top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            font-weight: 700;
+
+            .icon {
+              fill: #0a1026;
+              width: 1rem;
+            }
+          }
+
+          .caption__bottom {
+            font-size: 0.9rem;
+          }
+        }
+
+        .task-mobile__priority {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .btn-icon {
+            width: 2rem;
+            height: 2rem;
+            fill: rgba(111, 121, 133, 0.28);
+          }
+
+          .btn-icon__active {
+            fill: #5c5cff;
+          }
+        }
+      }
+
+      .task-mobile__progress {
+        & > svg {
+          width: 6rem;
+          height: 6rem;
+          transform: rotate(-90deg);
+        }
+      }
+
+      .task-mobile__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .info__column {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+
+      .task-mobile__btns {
+        display: flex;
+        justify-content: space-between;
+        gap: 9px;
+
+        .btn-action {
+          width: 90px;
+          height: 50px;
+          padding: 10px;
+          border-radius: 15px;
+          color: #fff;
+          font-weight: bold;
+          font-size: 18px;
+          letter-spacing: 1.22px;
+
+          &:nth-child(1) {
+            background-color: #5c5cff;
+          }
+
+          &:nth-child(2) {
+            background-color: #a98b97;
+          }
+
+          &:nth-child(3) {
+            background-color: #eaab7f;
+          }
+
+          &:nth-child(4) {
+            background-color: #97bb7d;
+          }
+        }
+      }
+    }
+
+    .task-mobile__notification {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .task-mobile__filter {
+      max-width: 350px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .task-mobile__body {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding: 0 20px;
+
+      .task-mobile__comments {
+        .comments-item {
+          padding: 0 20px;
+          max-height: 450px;
+          height: 100%;
+          overflow: auto;
+        }
+
+        .comments-form {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+
+      .file-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .btn-loader {
+          width: 30px;
+          opacity: 0;
+          position: absolute;
+          cursor: pointer;
+        }
+
+        .body-files {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+
+        }
+      }
+    }
+  }
+}
+
+.task-mobile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.info__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  &:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}
+
+.info__description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(111, 121, 133, 0.28);;
+  padding: 15px;
+  border-radius: 10px;
+
+  & > div {
+    color: #5c5cff;
+    width: 100%;
+    padding: 5px;
+    word-break: break-all;
+    overflow: hidden;
+  }
+}
